@@ -1,0 +1,13 @@
+这是一个mysql版本的后台管理系统，里面已经包含了用户角色，后台权限和新闻管理的管理
+使用方法：
+1、 替换：“CMS系统Mysql版本”为你的项目名称
+2、在navigator 模式下，
+	a.搜索bp_mysql[搜索格式：*.xml]替换为你的项目名称 
+	b.修改bp_mysql目录为，你的项目名称，搜索bp_mysql[搜索格式：*.java]替换为你的项目名称 
+	c.搜索bp_mysql[搜索格式：*.properties]替换为你的项目名称 
+	
+3、新建mysql数据库，将“140314151641.psc”导入基础数据,使用mysql客户端管理工具navicat导入
+	新建库指定编码语句：
+	CREATE DATABASE `bp_mysql` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+4、新建2个存储过程，为树查询用：procedureGetSysModelParentList.sql和procedureGetSysModelSonList.sql
+5、启动服务器：“http://localhost:8080/bp_mysql”，即可
